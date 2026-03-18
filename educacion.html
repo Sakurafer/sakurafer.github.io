@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experiencia Laboral – Sakurafer</title>
+  <title>Educación – Sakurafer</title>
   <style>
     /* ---------- Reset & base ---------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,8 +61,8 @@
       padding-left: .75rem;
     }
 
-    /* ---------- Experience list ---------- */
-    .experience-list {
+    /* ---------- Education list ---------- */
+    .education-list {
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -89,7 +89,17 @@
       color: #888;
       white-space: nowrap;
     }
-    .entry-company { font-weight: 600; color: #e94560; margin-bottom: .35rem; }
+    .entry-institution { font-weight: 600; color: #e94560; margin-bottom: .35rem; }
+    .entry-credential {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: #fff;
+      background: #1a1a2e;
+      border-radius: 20px;
+      padding: .15rem .75rem;
+      margin-bottom: .5rem;
+    }
     .entry p { font-size: .95rem; color: #555; }
     .entry ul {
       margin-top: .5rem;
@@ -117,8 +127,8 @@
       <ul>
         <li><a href="index.html#about">Sobre mí</a></li>
         <li><a href="index.html#skills">Habilidades</a></li>
-        <li><a href="experiencia.html" class="active">Experiencia</a></li>
-        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="educacion.html" class="active">Educación</a></li>
         <li><a href="index.html#contact">Contacto</a></li>
       </ul>
     </nav>
@@ -126,61 +136,74 @@
 
   <main>
 
-    <!-- Experience -->
-    <section id="experiencia">
-      <h2>Experiencia Laboral</h2>
+    <!-- Education -->
+    <section id="educacion">
+      <h2>Educación</h2>
 
-      <ul class="experience-list">
+      <ul class="education-list">
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Desarrollador/a Web</h3>
-            <span class="date">2023 – Presente</span>
+            <h3>Ingeniería en Sistemas Computacionales</h3>
+            <span class="date">2019 – 2023</span>
           </div>
-          <p class="entry-company">Proyecto Personal / Freelance</p>
+          <p class="entry-institution">Universidad Tecnológica Nacional</p>
+          <span class="entry-credential">Título universitario</span>
           <p>
-            Desarrollo y mantenimiento de sitios web estáticos y aplicaciones web,
-            priorizando el rendimiento y la accesibilidad.
+            Formación integral en diseño y desarrollo de sistemas de software,
+            con énfasis en arquitectura de aplicaciones, bases de datos y
+            desarrollo web.
           </p>
           <ul>
-            <li>Diseño e implementación de interfaces responsivas con HTML5, CSS3 y JavaScript.</li>
-            <li>Optimización de rendimiento y aplicación de buenas prácticas de accesibilidad web (WCAG).</li>
-            <li>Control de versiones con Git y publicación de proyectos en GitHub Pages.</li>
+            <li>Proyecto de grado: Plataforma web de gestión académica con tecnologías modernas.</li>
+            <li>Especialización en desarrollo web y experiencia de usuario.</li>
+            <li>Promedio general: 8.5 / 10.</li>
           </ul>
         </li>
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Colaborador/a en Proyectos Open Source</h3>
+            <h3>Desarrollo Web Full Stack</h3>
             <span class="date">2022 – 2023</span>
           </div>
-          <p class="entry-company">GitHub / Comunidad Open Source</p>
+          <p class="entry-institution">Platzi / Coursera</p>
+          <span class="entry-credential">Diploma de especialización</span>
           <p>
-            Participación activa en proyectos de código abierto, contribuyendo con
-            correcciones de errores y mejoras de documentación.
+            Programa intensivo de formación en desarrollo web, cubriendo
+            tecnologías frontend y backend con proyectos prácticos.
           </p>
           <ul>
-            <li>Revisión y corrección de issues en repositorios de la comunidad.</li>
-            <li>Mejora de documentación técnica y archivos README.</li>
-            <li>Aprendizaje de flujos de trabajo colaborativos con pull requests y code reviews.</li>
+            <li>HTML5, CSS3, JavaScript moderno (ES6+) y frameworks como React.</li>
+            <li>Backend con Node.js, Express y bases de datos relacionales.</li>
+            <li>Metodologías ágiles y buenas prácticas de desarrollo de software.</li>
           </ul>
         </li>
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Practicante de Desarrollo Web</h3>
-            <span class="date">2021 – 2022</span>
+            <h3>Accesibilidad Web (WCAG 2.1)</h3>
+            <span class="date">2023</span>
           </div>
-          <p class="entry-company">Formación Autodidacta</p>
+          <p class="entry-institution">W3C / edX</p>
+          <span class="entry-credential">Certificado</span>
           <p>
-            Construcción de proyectos personales para afianzar conocimientos en
-            tecnologías web fundamentales.
+            Curso especializado en pautas de accesibilidad para el contenido web,
+            orientado a crear experiencias digitales inclusivas y conformes con
+            estándares internacionales.
           </p>
-          <ul>
-            <li>Desarrollo de páginas web estáticas con enfoque en semántica HTML y CSS moderno.</li>
-            <li>Implementación de interactividad básica con JavaScript vanilla.</li>
-            <li>Consumo de APIs REST para mostrar datos dinámicos en el navegador.</li>
-          </ul>
+        </li>
+
+        <li class="entry">
+          <div class="entry-header">
+            <h3>Bachillerato en Ciencias y Tecnología</h3>
+            <span class="date">2015 – 2018</span>
+          </div>
+          <p class="entry-institution">Instituto Secundario Técnico</p>
+          <span class="entry-credential">Grado secundario</span>
+          <p>
+            Formación con orientación técnica en informática y electrónica,
+            con primer contacto en programación y lógica computacional.
+          </p>
         </li>
 
       </ul>
