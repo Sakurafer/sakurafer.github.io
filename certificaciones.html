@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experiencia Laboral – Sakurafer</title>
+  <title>Certificaciones – Sakurafer</title>
   <style>
     /* ---------- Reset & base ---------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,8 +61,8 @@
       padding-left: .75rem;
     }
 
-    /* ---------- Experience list ---------- */
-    .experience-list {
+    /* ---------- Certifications list ---------- */
+    .certifications-list {
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -89,15 +89,18 @@
       color: #888;
       white-space: nowrap;
     }
-    .entry-company { font-weight: 600; color: #e94560; margin-bottom: .35rem; }
-    .entry p { font-size: .95rem; color: #555; }
-    .entry ul {
-      margin-top: .5rem;
-      padding-left: 1.25rem;
-      font-size: .95rem;
-      color: #555;
+    .entry-issuer { font-weight: 600; color: #e94560; margin-bottom: .35rem; }
+    .entry-credential {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: #fff;
+      background: #1a1a2e;
+      border-radius: 20px;
+      padding: .15rem .75rem;
+      margin-bottom: .5rem;
     }
-    .entry ul li { margin-bottom: .25rem; }
+    .entry p { font-size: .95rem; color: #555; }
 
     /* ---------- Footer ---------- */
     footer {
@@ -117,9 +120,9 @@
       <ul>
         <li><a href="index.html#about">Sobre mí</a></li>
         <li><a href="skills.html">Habilidades</a></li>
-        <li><a href="experiencia.html" class="active">Experiencia</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
         <li><a href="educacion.html">Educación</a></li>
-        <li><a href="certificaciones.html">Certificaciones</a></li>
+        <li><a href="certificaciones.html" class="active">Certificaciones</a></li>
         <li><a href="index.html#contact">Contacto</a></li>
       </ul>
     </nav>
@@ -127,61 +130,80 @@
 
   <main>
 
-    <!-- Experience -->
-    <section id="experiencia">
-      <h2>Experiencia Laboral</h2>
+    <!-- Certifications -->
+    <section id="certificaciones">
+      <h2>Certificaciones</h2>
 
-      <ul class="experience-list">
+      <ul class="certifications-list">
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Desarrollador/a Web</h3>
-            <span class="date">2023 – Presente</span>
+            <h3>Responsive Web Design</h3>
+            <span class="date">2023</span>
           </div>
-          <p class="entry-company">Proyecto Personal / Freelance</p>
+          <p class="entry-issuer">freeCodeCamp</p>
+          <span class="entry-credential">Certificado profesional</span>
           <p>
-            Desarrollo y mantenimiento de sitios web estáticos y aplicaciones web,
-            priorizando el rendimiento y la accesibilidad.
+            Dominio de principios de diseño responsivo utilizando HTML5, CSS3,
+            Flexbox y CSS Grid para crear interfaces adaptadas a múltiples
+            dispositivos y resoluciones de pantalla.
           </p>
-          <ul>
-            <li>Diseño e implementación de interfaces responsivas con HTML5, CSS3 y JavaScript.</li>
-            <li>Optimización de rendimiento y aplicación de buenas prácticas de accesibilidad web (WCAG).</li>
-            <li>Control de versiones con Git y publicación de proyectos en GitHub Pages.</li>
-          </ul>
         </li>
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Colaborador/a en Proyectos Open Source</h3>
-            <span class="date">2022 – 2023</span>
+            <h3>JavaScript Algorithms and Data Structures</h3>
+            <span class="date">2023</span>
           </div>
-          <p class="entry-company">GitHub / Comunidad Open Source</p>
+          <p class="entry-issuer">freeCodeCamp</p>
+          <span class="entry-credential">Certificado profesional</span>
           <p>
-            Participación activa en proyectos de código abierto, contribuyendo con
-            correcciones de errores y mejoras de documentación.
+            Fundamentos de JavaScript, incluyendo variables, arreglos, objetos,
+            funciones, programación orientada a objetos y programación funcional,
+            con énfasis en algoritmos y estructuras de datos.
           </p>
-          <ul>
-            <li>Revisión y corrección de issues en repositorios de la comunidad.</li>
-            <li>Mejora de documentación técnica y archivos README.</li>
-            <li>Aprendizaje de flujos de trabajo colaborativos con pull requests y code reviews.</li>
-          </ul>
         </li>
 
         <li class="entry">
           <div class="entry-header">
-            <h3>Practicante de Desarrollo Web</h3>
-            <span class="date">2021 – 2022</span>
+            <h3>Git y GitHub: Flujos de Trabajo Colaborativos</h3>
+            <span class="date">2022</span>
           </div>
-          <p class="entry-company">Formación Autodidacta</p>
+          <p class="entry-issuer">Platzi</p>
+          <span class="entry-credential">Certificado de curso</span>
           <p>
-            Construcción de proyectos personales para afianzar conocimientos en
-            tecnologías web fundamentales.
+            Control de versiones con Git y colaboración en proyectos mediante
+            GitHub, cubriendo ramas, pull requests, resolución de conflictos y
+            estrategias de flujo de trabajo en equipos ágiles.
           </p>
-          <ul>
-            <li>Desarrollo de páginas web estáticas con enfoque en semántica HTML y CSS moderno.</li>
-            <li>Implementación de interactividad básica con JavaScript vanilla.</li>
-            <li>Consumo de APIs REST para mostrar datos dinámicos en el navegador.</li>
-          </ul>
+        </li>
+
+        <li class="entry">
+          <div class="entry-header">
+            <h3>Introducción al Desarrollo Web</h3>
+            <span class="date">2022</span>
+          </div>
+          <p class="entry-issuer">Google / Coursera</p>
+          <span class="entry-credential">Certificado de curso</span>
+          <p>
+            Conceptos fundamentales del desarrollo web: arquitectura cliente-servidor,
+            funcionamiento de navegadores, HTML semántico, CSS y JavaScript básico,
+            con enfoque en buenas prácticas desde el inicio.
+          </p>
+        </li>
+
+        <li class="entry">
+          <div class="entry-header">
+            <h3>Accesibilidad Web (WCAG 2.1)</h3>
+            <span class="date">2023</span>
+          </div>
+          <p class="entry-issuer">W3C / edX</p>
+          <span class="entry-credential">Certificado</span>
+          <p>
+            Pautas internacionales de accesibilidad para contenido web, orientadas
+            a crear experiencias digitales inclusivas que cumplan con los estándares
+            WCAG 2.1 de nivel AA.
+          </p>
         </li>
 
       </ul>
