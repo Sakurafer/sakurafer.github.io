@@ -1,0 +1,395 @@
+/* ============================================================
+   CV Sakurafer – Global Stylesheet
+   Design: dark navy (#1a1a2e) + accent red (#e94560)
+   ============================================================ */
+
+/* ---------- Reset & base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Navigation ---------- */
+header {
+  background: #1a1a2e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+}
+nav .brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color .2s;
+}
+nav a:hover, nav a.active { color: #e94560; }
+
+/* ---------- Main content ---------- */
+main { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #1a1a2e;
+  border-left: 4px solid #e94560;
+  padding-left: .75rem;
+}
+
+/* ---------- Hero / About (index.html) ---------- */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e94560;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.about-text h1 { font-size: 2rem; color: #1a1a2e; }
+.about-text .tagline { color: #e94560; font-size: 1.05rem; margin: .25rem 0 .75rem; }
+
+/* ---------- Skills grid (index.html) ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: .75rem;
+}
+.skill-tag {
+  background: #f0f4ff;
+  border: 1px solid #d0d9f0;
+  border-radius: 20px;
+  padding: .4rem 1rem;
+  text-align: center;
+  font-size: .9rem;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.skill-tag:hover { background: #e94560; color: #fff; border-color: #e94560; }
+
+/* ---------- Experience / Education entries ---------- */
+.entry { margin-bottom: 1.5rem; }
+.entry:last-child { margin-bottom: 0; }
+.experience-list,
+.education-list,
+.certifications-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.experience-list .entry,
+.education-list .entry,
+.certifications-list .entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 0;
+}
+.experience-list .entry:first-child,
+.education-list .entry:first-child,
+.certifications-list .entry:first-child { padding-top: 0; }
+.experience-list .entry:last-child,
+.education-list .entry:last-child,
+.certifications-list .entry:last-child { border-bottom: none; padding-bottom: 0; }
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-bottom: .35rem;
+}
+.entry-header h3 { font-size: 1.1rem; color: #1a1a2e; }
+.entry-header .date {
+  font-size: .85rem;
+  color: #888;
+  white-space: nowrap;
+}
+.entry-company,
+.entry-institution,
+.entry-issuer { font-weight: 600; color: #e94560; margin-bottom: .35rem; }
+.entry p { font-size: .95rem; color: #555; }
+.entry ul {
+  margin-top: .5rem;
+  padding-left: 1.25rem;
+  font-size: .95rem;
+  color: #555;
+}
+.entry ul li { margin-bottom: .25rem; }
+
+.entry-credential {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  background: #1a1a2e;
+  border-radius: 20px;
+  padding: .15rem .75rem;
+  margin-bottom: .5rem;
+}
+
+/* ---------- Contact (index.html) ---------- */
+.contact-list { list-style: none; display: flex; flex-direction: column; gap: .75rem; }
+.contact-list li { display: flex; align-items: center; gap: .6rem; }
+.contact-list a { color: #1a1a2e; text-decoration: none; }
+.contact-list a:hover { color: #e94560; }
+.contact-icon { font-size: 1.2rem; }
+
+/* ---------- Header card (header.html) ---------- */
+.cv-header {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.cv-header-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.header-text h1 { font-size: 2rem; color: #1a1a2e; }
+.header-text .tagline {
+  color: #e94560;
+  font-size: 1.05rem;
+  margin: .25rem 0 .75rem;
+  font-weight: 600;
+}
+.header-text .intro { font-size: .95rem; color: #555; }
+
+/* ---------- Intro text (skills / interests / languages) ---------- */
+.intro-text { font-size: .95rem; color: #555; }
+
+/* ---------- Skill categories grid (skills.html) ---------- */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.category-card {
+  background: #f8f9fc;
+  border: 1px solid #e8ecf4;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.category-card h3 {
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.category-card h3 .cat-icon { font-size: 1.2rem; }
+
+/* ---------- Skill bars (skills.html) ---------- */
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+.skill-item { display: flex; flex-direction: column; gap: .3rem; }
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: .88rem;
+  color: #444;
+}
+.skill-label .level { color: #888; font-size: .82rem; }
+.skill-bar {
+  height: 6px;
+  background: #e8ecf4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  background: #e94560;
+  border-radius: 20px;
+  transition: width .6s ease;
+}
+
+/* ---------- Soft skills tags (skills.html) ---------- */
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: .75rem;
+}
+
+/* ---------- Interest cards (intereses.html) ---------- */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.interest-card {
+  background: #f8f9fc;
+  border: 1px solid #e8ecf4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow .2s, transform .2s;
+}
+.interest-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+}
+.interest-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  display: block;
+}
+.interest-card h3 {
+  font-size: 1.05rem;
+  color: #1a1a2e;
+  margin-bottom: .5rem;
+}
+.interest-card p { font-size: .9rem; color: #555; }
+
+/* ---------- Hobby tags (intereses.html) ---------- */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: .75rem;
+}
+.hobby-tag {
+  background: #f0f4ff;
+  border: 1px solid #d0d9f0;
+  border-radius: 20px;
+  padding: .4rem 1rem;
+  text-align: center;
+  font-size: .9rem;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.hobby-tag:hover { background: #e94560; color: #fff; border-color: #e94560; }
+
+/* ---------- Language cards (lenguajes.html) ---------- */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.language-card {
+  background: #f8f9fc;
+  border: 1px solid #e8ecf4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow .2s, transform .2s;
+}
+.language-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+}
+.language-card-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.language-flag { font-size: 2rem; line-height: 1; }
+.language-info { flex: 1; }
+.language-info h3 {
+  font-size: 1.05rem;
+  color: #1a1a2e;
+  margin-bottom: .25rem;
+}
+.language-level {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: #fff;
+  background: #e94560;
+  border-radius: 20px;
+  padding: .1rem .65rem;
+}
+.language-bar {
+  height: 6px;
+  background: #e8ecf4;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: .75rem;
+}
+.language-bar-fill {
+  height: 100%;
+  background: #e94560;
+  border-radius: 20px;
+  transition: width .6s ease;
+}
+.language-desc { font-size: .88rem; color: #555; }
+
+/* ---------- CEFR reference table (lenguajes.html) ---------- */
+.cefr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+.cefr-table th,
+.cefr-table td {
+  text-align: left;
+  padding: .6rem .75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.cefr-table th {
+  color: #1a1a2e;
+  font-weight: 600;
+  background: #f8f9fc;
+}
+.cefr-table td { color: #555; }
+.cefr-table tr:last-child td { border-bottom: none; }
+.cefr-badge {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #fff;
+  background: #1a1a2e;
+  border-radius: 4px;
+  padding: .1rem .45rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #aaa;
+  font-size: .85rem;
+}
