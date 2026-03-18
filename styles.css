@@ -393,3 +393,76 @@ footer {
   color: #aaa;
   font-size: .85rem;
 }
+
+/* ============================================================
+   Page banners – displayed between nav and main on section pages
+   ============================================================ */
+.page-banner {
+  background: #1a1a2e;
+  border-bottom: 3px solid #e94560;
+  padding: 2rem 1.5rem;
+}
+.page-banner .banner-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.page-banner .banner-icon {
+  font-size: 2.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.page-banner .banner-text h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: .2rem;
+}
+.page-banner .banner-text p {
+  color: #b0b0cc;
+  font-size: .9rem;
+}
+
+/* ============================================================
+   Section-specific accent colours
+   Each .page-* class on <body> scopes colour overrides
+   ============================================================ */
+
+/* --- Experiencia (default red accent, kept unchanged) --- */
+.page-experiencia .page-banner { border-bottom-color: #e94560; }
+
+/* --- Educación (blue accent) --- */
+.page-educacion .page-banner { border-bottom-color: #3b82f6; }
+.page-educacion section h2 { border-left-color: #3b82f6; color: #1a1a2e; }
+.page-educacion .entry-institution { color: #3b82f6; }
+.page-educacion .entry-credential { background: #3b82f6; }
+
+/* --- Habilidades (green accent) --- */
+.page-habilidades .page-banner { border-bottom-color: #10b981; }
+.page-habilidades section h2 { border-left-color: #10b981; color: #1a1a2e; }
+.page-habilidades .skill-bar-fill { background: #10b981; }
+.page-habilidades .skill-tag:hover { background: #10b981; border-color: #10b981; }
+.page-habilidades .category-card { border-top: 3px solid #10b981; }
+
+/* --- Certificaciones (amber accent) --- */
+.page-certificaciones .page-banner { border-bottom-color: #f59e0b; }
+.page-certificaciones section h2 { border-left-color: #f59e0b; color: #1a1a2e; }
+.page-certificaciones .entry-issuer { color: #f59e0b; }
+.page-certificaciones .entry-credential { background: #f59e0b; color: #1a1a2e; }
+
+/* --- Intereses (purple accent) --- */
+.page-intereses .page-banner { border-bottom-color: #8b5cf6; }
+.page-intereses section h2 { border-left-color: #8b5cf6; color: #1a1a2e; }
+.page-intereses .hobby-tag:hover { background: #8b5cf6; border-color: #8b5cf6; }
+.page-intereses .interest-card { border-top: 3px solid #8b5cf6; }
+.page-intereses .interest-card:hover { box-shadow: 0 4px 16px rgba(139,92,246,.15); }
+
+/* --- Lenguajes (cyan accent) --- */
+.page-lenguajes .page-banner { border-bottom-color: #06b6d4; }
+.page-lenguajes section h2 { border-left-color: #06b6d4; color: #1a1a2e; }
+.page-lenguajes .language-bar-fill { background: #06b6d4; }
+.page-lenguajes .language-level { background: #06b6d4; }
+.page-lenguajes .language-card { border-top: 3px solid #06b6d4; }
+.page-lenguajes .language-card:hover { box-shadow: 0 4px 16px rgba(6,182,212,.15); }
